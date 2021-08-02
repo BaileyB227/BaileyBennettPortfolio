@@ -53,14 +53,42 @@ h2 {
 
 .content {
     width: 50%;
-    display: inline-block;
 }
 
 p {
     padding: 10px;
 }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
 
-.project-image {
+h3 {
+    text-align: center;
+}
+
+.work {
+    float: left;
+    width: 100%;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: var(--bgcolor);
+    border: 1px solid #ddd;
+    overflow: auto;
+}
+
+.projects img {
+    position: relative;
     width: 300px;
     height: 200px;
+    margin: 20px;
+}
+
+.projects {
+    position: relative;
+    float: left;
+    overflow: auto;
 }
