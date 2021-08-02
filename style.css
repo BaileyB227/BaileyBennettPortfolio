@@ -1,0 +1,43 @@
+:root {
+    --bgcolor: #a078df;
+}
+
+header {
+    padding: 30px;
+    background-color: var(--bgcolor);
+    color: #ffffff;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #651186;
+}
+
+nav a {
+    color: #f5f5f5;
+    padding: 15px 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid #ddd;
+}
+
+.profile-photo {
+    width: 15%;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+}
