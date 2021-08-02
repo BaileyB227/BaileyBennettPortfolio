@@ -1,5 +1,6 @@
 :root {
     --bgcolor: #a078df;
+    --darkpurple: #651186;
 }
 
 * {
@@ -36,6 +37,7 @@ h2 {
     line-height: 50px;
     border-bottom: 3px solid rgb(0, 0, 0);
     text-align: center;
+    color: white;
 }
 
 .profile-photo {
@@ -48,7 +50,6 @@ h2 {
     margin-bottom: 20px;
     padding: 30px;
     background-color: var(--bgcolor);
-    color: #ffffff;
 }
 
 .content {
@@ -57,38 +58,50 @@ h2 {
 
 p {
     padding: 10px;
+    color: white;
 }
-.row {
+
+.work-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+    justify-content: center;
+    overflow: auto;
 }
 
 h3 {
     text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 30px;
+    z-index: 1;
+    position: absolute;
+    background-color: var(--darkpurple);
+    margin-top: 175px;
+    margin-left: 40px;
 }
 
 .work {
-    float: left;
-    width: 100%;
     padding: 30px;
-    margin: 0 0 40px;
     background: var(--bgcolor);
-    border: 1px solid #ddd;
-    overflow: auto;
 }
 
+
 .projects img {
-    position: relative;
     width: 300px;
     height: 200px;
-    margin: 20px;
+    margin: 40px;
+    border: 5px solid var(--darkpurple)
 }
 
 .projects {
-    position: relative;
     float: left;
-    overflow: auto;
+    position: relative;
+}
+
+.projects img:hover {
+  box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+  transform: scale(1.05)
 }
