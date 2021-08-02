@@ -2,6 +2,10 @@
     --bgcolor: #a078df;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 header {
     padding: 30px;
     background-color: var(--bgcolor);
@@ -27,17 +31,36 @@ nav a {
 }
 
 h2 {
-    padding-bottom: 20px;
-    font-size: 30px;
-    line-height: 49px;
-    border-bottom: 3px solid #ddd;
+    padding-bottom: 15px;
+    font-size: 45px;
+    line-height: 50px;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    text-align: center;
 }
 
 .profile-photo {
-    width: 15%;
+    width: 30%;
+    float: right;
+    padding: 5px
 }
 
-.about-me {
-    display: flex;
-    align-items: center;
+#about-me {
+    margin-bottom: 20px;
+    padding: 30px;
+    background-color: var(--bgcolor);
+    color: #ffffff;
+}
+
+.content {
+    width: 50%;
+    display: inline-block;
+}
+
+p {
+    padding: 10px;
+}
+
+.project-image {
+    width: 300px;
+    height: 200px;
 }
