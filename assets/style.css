@@ -122,3 +122,22 @@ div ul li {
     color: white;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .work-row .contact .about-me {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    .work-row .contact .about-me {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+}
