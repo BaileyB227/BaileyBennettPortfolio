@@ -98,8 +98,6 @@ h3 {
     border: 5px solid var(--darkpurple)
 }
 
-
-
 .projects img:hover {
   box-shadow: inset 0px 0px 8px white, 0 0 15px white;
   transform: scale(1.05)
