@@ -1,141 +1,145 @@
 :root {
-    --bgcolor: #a078df;
-    --darkpurple: #651186;
+  --bgcolor: #a078df;
+  --darkpurple: #651186;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header {
-    padding: 30px;
-    background-color: var(--bgcolor);
-    color: #ffffff;
+  padding: 30px;
+  background-color: var(--bgcolor);
+  color: #ffffff;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 60px;
+  text-align: center;
+  font-size: 60px;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #651186;
+  display: flex;
+  justify-content: center;
+  background-color: #651186;
 }
 
 nav a {
-    color: #f5f5f5;
-    padding: 15px 50px;
-    text-decoration: none;
-    text-align: center;
+  color: #f5f5f5;
+  padding: 15px 50px;
+  text-decoration: none;
+  text-align: center;
 }
 
 body {
-    margin: auto;
-    width: 60%;
-    background-color: rgb(204, 204, 204);
+  margin: auto;
+  width: 60%;
+  background-color: rgb(204, 204, 204);
 }
 
 h2 {
-    padding-bottom: 15px;
-    font-size: 45px;
-    line-height: 50px;
-    border-bottom: 3px solid rgb(0, 0, 0);
-    text-align: center;
-    color: white;
+  padding-bottom: 15px;
+  font-size: 45px;
+  line-height: 50px;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  text-align: center;
+  color: white;
 }
 
 .profile-photo {
-    width: 30%;
-    float: right;
-    padding: 5px
+  width: 30%;
+  float: right;
+  padding: 5px;
 }
 
 #about-me {
-    margin-bottom: 30px;
-    padding: 30px;
-    background-color: var(--bgcolor);
-    overflow: auto;
+  margin-bottom: 30px;
+  padding: 30px;
+  background-color: var(--bgcolor);
+  overflow: auto;
 }
 
 p {
-    padding: 10px;
-    color: white;
+  padding: 10px;
+  color: white;
 }
 
 .work-row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-    justify-content: center;
-    overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  justify-content: center;
+  overflow: auto;
 }
 
 h3 {
-    text-align: center;
-    color: white;
-    margin-top: 50px;
-    font-size: 30px;
-    z-index: 1;
-    position: absolute;
-    background-color: var(--darkpurple);
-    margin-top: 175px;
-    margin-left: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 30px;
+  z-index: 1;
+  position: absolute;
+  background-color: var(--darkpurple);
+  margin-top: 175px;
+  margin-left: 40px;
 }
 
 .work {
-    padding: 30px;
-    background: var(--bgcolor);
+  padding: 30px;
+  background: var(--bgcolor);
 }
 
 .projects img {
-    width: 300px;
-    height: 200px;
-    margin: 40px;
-    border: 5px solid var(--darkpurple)
+  width: 300px;
+  height: 200px;
+  margin: 40px;
+  border: 5px solid var(--darkpurple);
 }
 
 .projects img:hover {
   box-shadow: inset 0px 0px 8px white, 0 0 15px white;
-  transform: scale(1.05)
+  transform: scale(1.05);
 }
 
 .contact {
-    margin-top: 30px;
-    padding: 30px;
-    background-color: var(--bgcolor);
+  margin-top: 30px;
+  padding: 30px;
+  background-color: var(--bgcolor);
 }
 
 .contact div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 div ul li {
-    display: inline-block;
-    padding: 20px 80px;
-    color: white;
-    text-decoration: underline;
+  display: inline-block;
+  padding: 20px 80px;
+  color: white;
+  text-decoration: underline;
+}
+
+.deployed {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 768px) {
-    .work-row .contact .about-me {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
+  .work-row .contact .about-me {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 
-    nav {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+  nav {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
-  
+
 @media screen and (max-width: 992px) {
-    .work-row .contact .about-me {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
+  .work-row .contact .about-me {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
